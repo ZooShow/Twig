@@ -1,0 +1,13 @@
+{% extends "base.twig" %}
+{% block title %}Почему GO лучше PHP?{% endblock %}
+{% block content %}
+    <h1>Причины:</h1>
+
+    <ul style = "list-style: none">
+        {% for reason in reasons %}
+            <li>
+                <span>&#9745;{{reason}}</span>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
